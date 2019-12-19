@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    var name = "denise stark";
+
+    name.split(" ");
+    console.log(name.split(" "));
+    var nameArr = name.split(" ");
+    console.log(nameArr);
+
+    for (var i = 0; i < nameArr.length; i++) {
+      var currentName = nameArr[i];
+      var upperCaseName = currentName.charAt(0).toUpperCase() + currentName.substring(1);
+      console.log(upperCaseName);
+      nameArr[i] = upperCaseName; //reassign the name
+    }
+      console.log(nameArr.join(" "));
+
+      
+
+    var animals = ["chicken", "rabbit", "ocelot", "shark", "whale", "caterpillar", "ostrich", "unicorn"];
+
+    for (var i = 0; i < animals.length; i++) {
+        // console.log(animals[i]);
+        console.log(animals[i].charAt(0).toUpperCase() + animals[i].substring(1));
+
+        // if (animals[i].indexOf(0)) {
+        //   console.log
+        // }
+    }
+
+
+
+  </script>
+</body>
+</html>
